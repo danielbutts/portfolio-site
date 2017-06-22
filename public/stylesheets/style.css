@@ -4,5 +4,84 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  font-size: 14px;
+  color: #8F8289;
+  /*text-decoration: none;*/
+}
+
+a:hover {
+  font-size: 14px;
+  color: white;
+  /*text-decoration: none;*/
+}
+
+.tile {
+  background: linear-gradient(to left, #CCC5BD, #E5E2DE);
+  border: 1px solid #857A6F;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.clear {
+  clear: both;
+}
+
+button {
+  border: 1px solid #857A6F !important;
+  float:right;
+  margin-top:10px;
+}
+
+.tile-img {
+  margin-top:10px;
+  border: 1px solid #6B6267;
+  /*border-radius: 5px;*/
+}
+
+div span.label {
+  display: inline-block;
+  /*margin-bottom: 2px !important;*/
+}
+
+.col-xs-4 {
+  padding: 5px;
+}
+
+.icon {
+  border-radius: 50%;
+  width: 25px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.project-title {
+    color:#2F2A37;
+    font-family: 'Open Sans', sans-serif;
+    /*font-weight: bold;*/
+    margin-bottom: 10px;
+    padding-bottom: 2%;
+    border-bottom: 2px dashed rgba(0, 0, 0, .25);
+    font-size:18px;
+    text-align : center;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.technologies {
+    color:#2F2A37;
+    font-family: 'Open Sans', sans-serif;
+    /*font-weight: bold;*/
+    font-size:14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.project-description {
+  color:#8F8289;
+  font-family: 'Open Sans', sans-serif;
+    /*font-weight: bold;*/
+    margin-bottom: 10px;
+    font-size:14px;
+    text-align : center;
+
 }
