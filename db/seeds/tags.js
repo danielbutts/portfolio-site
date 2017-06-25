@@ -17,6 +17,9 @@ exports.seed = function(knex, Promise) {
       {id: 10, name: 'KnexJS', category: 'database', color: '#867F93'},
       {id: 11, name: 'Sequelize', category: 'database', color: '#867F93'},
       {id: 12, name: 'Spring Data JPA', category: 'database', color: '#867F93'},
+      {id: 13, name: 'jQuery', category: 'library', color: '#B8AEAE'},
+      {id: 14, name: 'Javascript', category: 'interpreted', color: '#91A3A9'},
+      {id: 15, name: 'Bootstrap', category: 'library', color: '#B8AEAE'},
     ]);
   });
 };

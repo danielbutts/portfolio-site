@@ -10,6 +10,8 @@ exports.seed = function(knex, Promise) {
       {project_id: 1, tag_id: 9},
       {project_id: 1, tag_id: 5},
       {project_id: 1, tag_id: 11},
+      {project_id: 1, tag_id: 14},
+      {project_id: 1, tag_id: 15},
       {project_id: 2, tag_id: 1},
       {project_id: 2, tag_id: 2},
       {project_id: 2, tag_id: 3},
@@ -20,6 +22,11 @@ exports.seed = function(knex, Promise) {
       {project_id: 2, tag_id: 8},
       {project_id: 2, tag_id: 9},
       {project_id: 2, tag_id: 12},
+      {project_id: 2, tag_id: 14},
+      {project_id: 2, tag_id: 15},
+      {project_id: 3, tag_id: 5},
+      {project_id: 3, tag_id: 13},
+      {project_id: 3, tag_id: 14},
     ]);
   });
 };
