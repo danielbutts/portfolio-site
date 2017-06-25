@@ -6,6 +6,7 @@ const router = express.Router();
 /* GET home page. */
 router.get('/', (req, res) => {
   const projects = {};
+  const projArr = [];
   knex.select('projects.id as project_id', 'projects.name as project_name', 'description', 'priority', 'repo_url', 'deploy_url', 'deploy_service', 'image_url', 'bkgd_grad_start', 'bkgd_grad_end', 'tags.name as tag_name', 'tags.id as tag_id', 'category', 'color').from('projects')
     .leftOuterJoin('project_tag', 'projects.id', 'project_tag.project_id')
     .leftOuterJoin('tags', 'tags.id', 'project_tag.tag_id')
@@ -35,12 +36,14 @@ router.get('/', (req, res) => {
         delete project.tag_name;
         delete project.category;
         delete project.color;
+        projArr.push(project);
       });
+      projArr.sort((a, b) => a - b);
+      res.render('pages/index', { projArr });
     })
     .catch((err) => {
       console.error(err);
     });
-  res.render('index', { projects });
 });
 
 module.exports = router;

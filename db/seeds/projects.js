@@ -46,8 +46,8 @@ exports.seed = function(knex, Promise) {
         deploy_url: 'https://angularjs-article-aggregator.herokuapp.com/',
         deploy_service: 'heroku',
         image_url: 'https://github.com/danielbutts/reddit-clone/blob/master/screenshot.png?raw=true',
-        bkgd_grad_start: '#FDE0C6',
-        bkgd_grad_end: '#FEEFE2'
+        bkgd_grad_start: '#CDD5D7',
+        bkgd_grad_end: '#EBEEEF'
       },
       { id: 5,
         name: 'Online Donut Shop',
@@ -57,13 +57,20 @@ exports.seed = function(knex, Promise) {
         deploy_url: 'https://online-donut-shop.herokuapp.com/',
         deploy_service: 'heroku',
         image_url: 'https://github.com/danielbutts/donut-store-site/blob/master/screenshot.png?raw=true',
-        bkgd_grad_start: '#FDE0C6',
-        bkgd_grad_end: '#FEEFE2'
+        bkgd_grad_start: '#EDD0CD',
+        bkgd_grad_end: '#FAF3F2'
       },
-      
-      
-
-      
+      { id: 6,
+        name: 'Scrabble',
+        description: 'This application was built as an exercise in client side javascript using jQuery and Bootstrap using the classic word game Scrabble as a basis for rules and gameplay.',
+        priority: 7,
+        repo_url: 'https://github.com/danielbutts/scrabble_clone',
+        deploy_url: '#',
+        deploy_service: 'heroku',
+        image_url: 'https://github.com/danielbutts/donut-store-site/blob/master/screenshot.png?raw=true',
+        bkgd_grad_start: '#EDD0CD',
+        bkgd_grad_end: '#FAF3F2'
+      },
     ]);
   });
 };

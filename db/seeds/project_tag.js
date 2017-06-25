@@ -27,6 +27,28 @@ exports.seed = function(knex, Promise) {
       {project_id: 3, tag_id: 5},
       {project_id: 3, tag_id: 13},
       {project_id: 3, tag_id: 14},
+      
+      {project_id: 4, tag_id: 4},
+      {project_id: 4, tag_id: 5},
+      {project_id: 4, tag_id: 7},
+      {project_id: 4, tag_id: 8},
+      {project_id: 4, tag_id: 9},
+      {project_id: 4, tag_id: 10},
+      {project_id: 4, tag_id: 13},
+      {project_id: 4, tag_id: 14},
+      {project_id: 4, tag_id: 15},
+
+      {project_id: 5, tag_id: 4},
+      {project_id: 5, tag_id: 5},
+      {project_id: 5, tag_id: 8},
+      {project_id: 5, tag_id: 9},
+      {project_id: 5, tag_id: 10},
+      {project_id: 5, tag_id: 13},
+      {project_id: 5, tag_id: 14},
+      {project_id: 5, tag_id: 15},
+      
+      
+      
     ]);
   });
 };

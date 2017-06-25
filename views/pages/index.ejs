@@ -1,0 +1,33 @@
+<% include ../partials/top %>
+<div class="container dynamicTile">
+  <div class="row">
+    <% projArr.forEach((project, index) => { %>
+      <% if (index !== 0 && index % 3 === 0) { %>
+        </div>
+        <div class="row">
+      <% } %>
+      <div class="col-xs-4">
+          <div class="tile" style="background: linear-gradient(to left, <%= project.bkgd_grad_start %>, <%= project.bkgd_grad_end %>);">
+            <div class="project-title"><%= project.project_name %></div>
+            <div class="project-description"><%= project.description %></div>
+            <div class="technologies">Technologies:</div>
+            <div>
+              <% project.tags.forEach((tag) => { %>
+                <span class="label" style="background-color: <%= tag.color %>"><% tag.name %></span>
+              <% }) %>
+            </div>
+            <div class="item">
+                <img src="<%= project.image_url %>" class="tile-img img-responsive" />
+            </div>
+            <br>
+            <div class="text-center">
+                <a href="<%= project.repo_url %>" target="_blank"><img src="images/github_icon.png" class="icon" />Github Repo</a>
+                <a href="<%= project.deploy_url %>" target="_blank"><img src="images/<%= project.deploy_service %>_icon.png" class="icon" />Live App</a>
+            </div>
+          </div>
+      </div>
+    <% }) %>
+  </div>
+</div>
+<% include ../partials/bottom %>
+
