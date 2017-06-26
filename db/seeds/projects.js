@@ -40,7 +40,7 @@ exports.seed = function(knex, Promise) {
       },
       { id: 4,
         name: 'Article Aggregator',
-        description: 'AngularJS clone of popular article aggregator sites like Reddit. Allows users to post, edit, and delete articles as well as add comments and vote individual articles up or down.',
+        description: 'AngularJS clone of popular article aggregator sites like Reddit. Allows users to post, edit, and delete articles as well as add comments and up/down vote articles.',
         priority: 4,
         repo_url: 'https://github.com/danielbutts/reddit-clone',
         deploy_url: 'https://angularjs-article-aggregator.herokuapp.com/',
@@ -61,15 +61,15 @@ exports.seed = function(knex, Promise) {
         bkgd_grad_end: '#FAF3F2'
       },
       { id: 6,
-        name: 'Scrabble',
-        description: 'This application was built as an exercise in client side javascript using jQuery and Bootstrap using the classic word game Scrabble as a basis for rules and gameplay.',
+        name: 'Scrabble Clone',
+        description: 'This application was built as an exercise in client side javascript using jQuery and Bootstrap using the classic word game Scrabble as a basis for gameplay.',
         priority: 7,
         repo_url: 'https://github.com/danielbutts/scrabble_clone',
-        deploy_url: '#',
-        deploy_service: 'heroku',
-        image_url: 'https://github.com/danielbutts/donut-store-site/blob/master/screenshot.png?raw=true',
-        bkgd_grad_start: '#EDD0CD',
-        bkgd_grad_end: '#FAF3F2'
+        deploy_url: 'https://scrabble-clone.firebaseapp.com/',
+        deploy_service: 'firebase',
+        image_url: 'https://github.com/danielbutts/scrabble_clone/blob/master/static/images/screenshot.png?raw=true',
+        bkgd_grad_start: '#F9F9DA',
+        bkgd_grad_end: '#FCFCF0'
       },
     ]);
   });

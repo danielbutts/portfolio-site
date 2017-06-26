@@ -13,7 +13,7 @@
             <div class="technologies">Technologies:</div>
             <div>
               <% project.tags.forEach((tag) => { %>
-                <span class="label" style="background-color: <%= tag.color %>"><% tag.name %></span>
+                <span class="label" style="background-color: <%= tag.color %>"><%= tag.name %></span>
               <% }) %>
             </div>
             <div class="item">

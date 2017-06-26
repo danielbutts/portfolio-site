@@ -27,7 +27,6 @@ exports.seed = function(knex, Promise) {
       {project_id: 3, tag_id: 5},
       {project_id: 3, tag_id: 13},
       {project_id: 3, tag_id: 14},
-      
       {project_id: 4, tag_id: 4},
       {project_id: 4, tag_id: 5},
       {project_id: 4, tag_id: 7},
@@ -37,7 +36,6 @@ exports.seed = function(knex, Promise) {
       {project_id: 4, tag_id: 13},
       {project_id: 4, tag_id: 14},
       {project_id: 4, tag_id: 15},
-
       {project_id: 5, tag_id: 4},
       {project_id: 5, tag_id: 5},
       {project_id: 5, tag_id: 8},
@@ -46,6 +44,10 @@ exports.seed = function(knex, Promise) {
       {project_id: 5, tag_id: 13},
       {project_id: 5, tag_id: 14},
       {project_id: 5, tag_id: 15},
+      {project_id: 6, tag_id: 5},
+      {project_id: 6, tag_id: 13},
+      {project_id: 6, tag_id: 14},
+      {project_id: 6, tag_id: 15},
       
       
       
